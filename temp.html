@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/3734169c74.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./test.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>WATERFLOW MANAGEMENT</title>
+</head>
+<body>
+  <a href="#" class="gotop" id="buttonss"><i class="fa-solid fa-arrow-up-long"></i></a>
+  <div class="box4">
+    <img src="./media/water-flow.jpg" alt="" class="box-img"><a style="font-size: 40px;">    WATERFLOW MANAGEMENT SYSTEM</a>
+    <br>   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+    <br>
+    <a class="buttonss" href="temp.html" id="buttonss">IMPLEMENTATION APPROACH</a>
+    <a class="buttonss" href="temp2.html" id="buttonss">GRAPH ANALYSIS</a>
+    <a class="buttonss" href="temp3.html" id="buttonss">ABOUT US</a>
+  </div>
+  <div class="box4" style="text-align:center" id="aboutus">
+  <a class="buttonss" href="#data"  id="buttonss">DATA ANALYSIS</a>
+  <a class="buttonss" href="#implementation" id="buttonss">IMPLEMENTATION APPROACH</a>
+  <a class="buttonss" href="#components" id="buttonss">COMPONENTS USED</a>
+  </div>
+  <div class="box2" id="data">
+    <center>
+      <h1 style="color: rgb(253, 255, 253)"><u>DATA ANALYSIS</u></h1>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+    </center>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">1)</a>The sensor outputs flow rate in pulses/min
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">1)</a>By counting the pulses from the output of the <a style="color:chartreuse ;">magnetic hall effect sensor</a>(integrated),we can easily calculate water flow. Each pulse is approximately 2.25 milliliters.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">2)</a>The difference in flow speeds over an interval of time can be used to calculate the average consumption of water.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">3)</a>The flow rate can be used to calculate water bills in domestic as well as industrial applications.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">4)</a>Per day water consumption and average water flow will be monitored, and an alert generated if data exceeds limit
+    </h3>
+    <br>
+    <a class="buttonss" href="#aboutus" id="buttonss">BACK</a>
+  </div>
+      <div class="box2" id="implementation">
+      <h1><u>IMPLEMENTATION APPROACH
+        </u>
+      </h1>
+      <br>
+      <hr>
+      <br>
+      <section class="container">
+        <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:1</u></h2>
+        <br>
+        <p>The flow sensor will be installed in a pipe. The sensor will output the flow rate in pulses/min. This data is uploaded on this website via OneM2M which can be displayed by the users as well as analysts. </p>
+      </div>
+      <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:2</u></h2>
+        <br>
+        <p>The website will display using graphs the data collected from oneM2M.</p>
+      </div>
+      <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:3</u></h2>
+        <br>
+        <p>The data collected will be analyzed for various further applications.</p>
+      </div>
+      <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:4</u></h2>
+        <br>
+        <p>The sensor, interfaced with the ESP32 will be set up in a 3D printed box to finish setting up the Monitoring Device.</p>
+      </div>
+    </section>
+    <br>
+      <br>
+      <br>
+      <a class="buttonss" href="#aboutus" id="buttonss">BACK</a>
+  </div>
+    <div class="box2" id="components">
+      <h1><u>COMPONENTS USED
+        </u>
+      </h1>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <section class="container">
+        <a class="card" id="espp"  href="https://en.wikipedia.org/wiki/ESP32" target="_blank">
+          <div class="card-img esp"></div>
+        <h2 style="color:chartreuse ;"><u>ESP32</u></h2>
+        <br>
+        </a>
+      <a class="card" id="sensorr" href="https://www.amazon.in/Water-Flow-Sensor-by-Robokart/dp/B00ZNAXNRO" target="_blank">
+        <div class="card-img sensor"></div>
+        <h2 style="color:chartreuse ;"><u>FLOW SENSOR</u></h2>
+        <br>
+      </a>
+      <a class="card" id="m2mm" href="https://en.wikipedia.org/wiki/OneM2M" target="_blank">
+        <div class="card-img onem2m"></div>
+        <h2 style="color:chartreuse ;"><u>ONE M2M</u></h2>
+        <br>
+      </a>
+      <a class="card" id="thingspeakk" href="https://en.wikipedia.org/wiki/ThingSpeak" target="_blank">
+        <div class="card-img thingspeak"></div>
+        <h2 style="color:chartreuse ;"><u>THINGSPEAK</u></h2>
+        <br>
+      </a>
+    </section>
+    <br>
+      <br>
+      <br>
+      <a class="buttonss" href="#aboutus" id="buttonss">BACK</a>
+    </div>
+</body>
+</html>

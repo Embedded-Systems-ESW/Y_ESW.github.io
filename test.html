@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  <link rel="stylesheet" href="./test.css">
+  <title>WATERFLOW MANAGEMENT</title>
+</head>
+<body>
+  <a href="#" class="gotop" id="buttonss"><i class="fa-sharp fa-solid fa-up">TOP</i></a>
+  <div class="box4">
+    <img src="./media/water-flow.jpg" alt="" class="box-img"><a style="font-size: 40px;">    WATERFLOW MANAGEMENT SYSTEM</a>
+    <br>
+    <br>
+    <a class="buttonss" href="#data" id="buttonss">IN-DEPTH ANALYSIS</a>
+    <a class="buttonss" href="#graph" id="buttonss">GRAPH ANALYSIS</a>
+    <a class="buttonss" href="#aboutus" id="buttonss">ABOUT US</a>
+  </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <ul>
+          <section class="container">
+          <h1 style="text-align:center"><u>YOUR DATA</u></h1>
+          <br>
+          <br>
+          <a class="card2">Average Daily Water Consumption:</a>
+          <br>
+          <a class="card2">Flow Type:</a>    
+          <br>
+          <a class="card2">Predicted Monthly Water Bill:</a>
+          <br>
+          <a class="card2">Today's Consumption:</a>
+          <br>
+          </section>
+          <br>
+          <br>
+          <a class="buttonss" href="#data" id="buttonss" style="text-align:center">IN-DEPTH ANALYSIS</a>
+          <!-- <a class="buttonss" href="#graph" id="buttonss">GRAPH ANALYSIS</a>
+          <a class="buttonss" href="#aboutus" id="buttonss">ABOUT US</a> -->
+          <!-- <a class="buttonss" href="#introduction" id="buttonss">INTRODUCTION</a>
+            <a class="buttonss" href="#implementation" id="buttonss">IMPLEMENTATION APPROACH</a>
+            <a class="buttonss" href="#components" id="buttonss">COMPONENTS USED</a> -->
+
+          </ul>
+        <!-- </div> -->
+        <div class="box2" id="graph">
+          <body>
+            <h1><u>GRAPH ANALYSIS</u></h1>
+            <br>
+            <br>
+            <a class="buttonss" href="#flowrate" id="buttonss">Flow Rate(L/Min)</a>
+            <a class="buttonss" href="#volume" id="buttonss">Volume(L)</a>
+            <a class="buttonss" href="#hourwise" id="buttonss">HOUR-WISE VOLUME (L)</a>
+            <a class="buttonss" href="#consumption" id="buttonss">LAST WEEK WATERFLOW</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div id="page-wrapper" >
+              <div id="page-inner">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <div  class="col-md-12 col-sm-24 col-xs-12">                     
+                    <div class="panel panel-default">
+                      <div class="panel-heading" id="flowrate">
+                          Flow Rate(L/min)
+                      </div>
+                      <canvas id="myChart1"></canvas>
+                    </div>       
+                    <label for="from" >FROM :</label>
+                    <input type="date" name="from" class="one" id="input-from-date">
+                    <label for="tp">TO :</label>
+                    <input type="date" name="to" class="one" id="input-to-date">
+                    <button id="input-date" class="input-date">Submit</button>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="buttonss" href="#graph" id="buttonss">BACK</a>
+                  </div>
+                  <br>
+                  <br>
+                  <hr>
+                  <br>
+                  <br>
+                  <div class="col-md-12 col-sm-24 col-xs-12">                     
+                    <div class="panel panel-default">
+                      <div class="panel-heading" id="volume">
+                        Volume(L)
+                      </div>
+                      <canvas id="myChart2"></canvas>
+                    </div>       
+                    <label for="from" >FROM :</label>
+                    <input type="date" name="from" class="one" id="input-from-date1">
+                    <label for="tp">TO :</label>
+                    <input type="date" name="to" class="one" id="input-to-date1">
+                    <button id="input-date1" class="input-date1">Submit</button>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="buttonss" href="#graph" id="buttonss">BACK</a>
+                  </div>
+                  <br>
+                  <br>
+                  <hr>
+                  <br>
+                  <br>
+                  <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                      <div class="panel-heading" id="hourwise">
+                        HOUR-WISE VOLUME (L)
+                      </div>
+                      <div class="panel-body">
+                          <div id="morris-line-chart"></div>
+                      </div>
+                    </div>            
+                  </div>
+                  <br>
+                  <br>
+                  <hr>
+                  <br>
+                  <br>
+                  <div class="col-md-6 col-sm-12 col-xs-12">                     
+                    <div class="panel panel-default">
+                      <div class="panel-heading" id="consumption">
+                        DAY-WISE VOLUME FLOW DURING LAST WEEK (L)
+                      </div>
+                      <div class="panel-body">                            
+                        <div id="morris-donut-chart"></div>
+                      </div>
+                    </div>            
+                  </div> 
+              </div>
+            </div>
+            <!-- <script src="assets/js/jquery-1.10.2.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/jquery.metisMenu.js"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="charts/charts1.js"></script>
+          </body>
+        </div>
+  <div class="box2" id="data">
+    <center>
+      <h1 style="color: rgb(253, 255, 253)"><u>DATA ANALYSIS</u></h1>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+    </center>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">1)</a>The sensor outputs flow rate in pulses/min
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">1)</a>By counting the pulses from the output of the <a style="color:chartreuse ;">magnetic hall effect sensor</a>(integrated),we can easily calculate water flow. Each pulse is approximately 2.25 milliliters.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">2)</a>Depending on speed of flow, the application decides whether the flow is turbulent or smooth and displays the conclusion on the website.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">3)</a>The difference in flow speeds over an interval of time can be used to calculate the average consumption of water.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">4)</a>The flow rate can be used to calculate water bills in domestic as well as industrial applications.
+    </h3>
+    <br>
+    <br>
+    <h3 style="text-align:left ;">
+      <a style="color:chartreuse ;">5)</a>Per day water consumption and average water flow will be monitored, and an alert generated if data exceeds limit
+    </h3>
+    
+  </div>
+  <div class="box2" id="aboutus">
+    <br>
+    <br>
+    <h1><u>ABOUT US</u></h1>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <a class="buttonss" href="#introduction" id="buttonss">INTRODUCTION</a>
+    <a class="buttonss" href="#implementation" id="buttonss">IMPLEMENTATION APPROACH</a>
+    <a class="buttonss" href="#components" id="buttonss">COMPONENTS USED</a>
+    <br>
+    <br>
+    </div>
+    <div class="box2" id="introduction">
+      <h1><u>INTRODUCTION
+  
+        </u>
+      </h1>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <h3>
+          A flow control provides good water management. By including a flow control in your system, you will be saving water which will ultimately save you money.
+        <a style="color:chartreuse;">A win for you and the environment!!.</a>
+      <br>
+      <br>
+      <h3>
+        The idea of this project is to develop a water flow monitoring system to overcome above problems by setting up components for detecting leakage, pipe bursts and liquid quality to ensure minimum wastage of good quality water.
+      </h3>
+      <br>
+      <br>
+      <h3 style="text-align:left ;">
+        This Monitoring Device and Application thus achieves the following :
+      </h3>
+      <br>
+      <p style="text-align:left ;">
+        <a style="color:chartreuse ;">1)</a> Displays current water flow in a pipe
+      </p>
+      <p style="text-align:left ;">
+         <a style="color:chartreuse ;">2)</a> Raises alarm if water flow exceeds limit
+      </p>
+      <p style="text-align:left ;">
+        <a style="color:chartreuse ;">3)</a> Records data of water flow and water consumption in a graph for further applications
+      </p>
+      <p style="text-align:left ;">
+        <a style="color:chartreuse ;">4)</a> Monitors amount of water consumed per day
+      </p>
+      <p style="text-align:left ;">
+        <a style="color:chartreuse ;">5)</a> Calculates monthly water bills
+      </p>
+      
+      <ul>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <a class="buttonss" href="#aboutus" id="buttonss">BACK</a>
+    </div>
+      <div class="box2" id="implementation">
+      <h1><u>IMPLEMENTATION APPROACH
+        </u>
+      </h1>
+      <br>
+      <hr>
+      <br>
+      <section class="container">
+        <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:1</u></h2>
+        <br>
+        <p>The flow sensor will be installed in a pipe. The sensor will output the flow rate in pulses/min. This data is uploaded on this website via OneM2M which can be displayed by the users as well as analysts. </p>
+      </div>
+      <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:2</u></h2>
+        <br>
+        <p>The website will display using graphs the data collected from oneM2M.</p>
+      </div>
+      <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:3</u></h2>
+        <br>
+        <p>The data collected will be analyzed for various further applications.</p>
+      </div>
+      <div class="card">
+        <h2 style="color:chartreuse ;"><u>STEP:4</u></h2>
+        <br>
+        <p>The sensor, interfaced with the ESP32 will be set up in a 3D printed box to finish setting up the Monitoring Device.</p>
+      </div>
+    </section>
+    <br>
+      <br>
+      <br>
+      <a class="buttonss" href="#aboutus" id="buttonss">BACK</a>
+  </div>
+    <div class="box2" id="components">
+      <h1><u>COMPONENTS USED
+        </u>
+      </h1>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <section class="container">
+        <a class="card" id="espp"  href="https://en.wikipedia.org/wiki/ESP32" target="_blank">
+          <div class="card-img esp"></div>
+        <h2 style="color:chartreuse ;"><u>ESP32</u></h2>
+        <br>
+        </a>
+      <a class="card" id="sensorr" href="https://www.amazon.in/Water-Flow-Sensor-by-Robokart/dp/B00ZNAXNRO" target="_blank">
+        <div class="card-img sensor"></div>
+        <h2 style="color:chartreuse ;"><u>FLOW SENSOR</u></h2>
+        <br>
+      </a>
+      <a class="card" id="m2mm" href="https://en.wikipedia.org/wiki/OneM2M" target="_blank">
+        <div class="card-img onem2m"></div>
+        <h2 style="color:chartreuse ;"><u>ONE M2M</u></h2>
+        <br>
+      </a>
+      <a class="card" id="thingspeakk" href="https://en.wikipedia.org/wiki/ThingSpeak" target="_blank">
+        <div class="card-img thingspeak"></div>
+        <h2 style="color:chartreuse ;"><u>THINGSPEAK</u></h2>
+        <br>
+      </a>
+    </section>
+    <br>
+      <br>
+      <br>
+      <a class="buttonss" href="#aboutus" id="buttonss">BACK</a>
+    </div>
+</body>
+</html>

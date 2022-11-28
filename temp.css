@@ -1,0 +1,264 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: url(./media/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .buttonss {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(10, 92, 140, 0.597);
+    padding: 5px;
+    margin: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    border: 2px solid rgb(2, 6, 57);
+    border-radius: 5px;
+    transition: all ease-in-out 250ms;
+    }
+    #buttonss:hover{
+     background-color:  rgba(10, 92, 140, 0.987);
+    }
+    .input-date {
+      color: white;
+      text-decoration: none;
+      background-color: rgba(10, 92, 140, 0.597);
+      padding: 5px;
+      margin: 8px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      border: 2px solid rgb(2, 6, 57);
+      border-radius: 5px;
+      transition: all ease-in-out 250ms;
+      }
+      #input-date:hover{
+       background-color:  rgba(10, 92, 140, 0.987);
+      }
+      .input-date1 {
+        color: white;
+        text-decoration: none;
+        background-color: rgba(10, 92, 140, 0.597);
+        padding: 5px;
+        margin: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        border: 2px solid rgb(2, 6, 57);
+        border-radius: 5px;
+        transition: all ease-in-out 250ms;
+        }
+        #input-date1:hover{
+         background-color:  rgba(10, 92, 140, 0.987);
+        }
+        .gotop {
+          position:fixed;
+          width: 40px;
+          height: 30px;
+          bottom: 5px;
+          right: 5px;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          background-color:  rgba(10, 92, 140, 0.597);
+          /* padding: 5px; */
+          padding-bottom: 10px;
+          margin: 8px;
+          /* margin-top: 10px; */
+          margin-bottom: 10px;
+          font-size: 20px;
+          border: 2px solid rgb(2,6,57);
+          border-radius: 8px;
+          transition: all ease-in-out 250ms;
+          line-height: 50px;
+        }
+    .box4 {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      text-align: left;
+      margin:auto;
+      color: white;
+      font-family: 'Century Gothic', sans-serif;
+      border-radius: 8px;
+    }
+    .box3 {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      text-align: center;
+      margin:auto;
+      margin-bottom: 2.5%;
+      color: white;
+      font-family: 'Century Gothic', sans-serif;
+      border-radius: 8px;
+    }
+    .box {
+      width: 50%;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      text-align: center;
+      margin:auto;
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      color: white;
+      font-family: 'Century Gothic', sans-serif;
+      border-radius: 8px;
+    }
+    .box2{
+      width: 80%;
+      background: rgba(0, 0, 0, 0.473);
+      padding: 60px;
+      text-align: center;
+      margin: auto;
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      color: white;
+      font-family: 'Century Gothic',sans-serif;
+      border-radius: 8px;
+    }
+    .box-img{
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+    }
+    .card2{
+      width: 40%;
+      height: 250px;
+      background: rgba(0, 0, 0, 0.473);
+      padding: 20px;
+      text-align: center;
+      margin: 5px;
+      margin-top: 0%;
+      margin-bottom:0%;
+      color: white;
+      border-radius: 8px;
+      font-family: 'Century Gothic',sans-serif;
+      transition: all ease-in-out 250ms;
+    }
+    .card{
+      width: 40%;
+      height: 250px;
+      background: rgba(0, 0, 0, 0.473);
+      padding: 20px;
+      text-align: center;
+      margin: 5px;
+      margin-top: 0%;
+      margin-bottom:0%;
+      color: white;
+      border-radius: 8px;
+      font-family: 'Century Gothic',sans-serif;
+      transition: all ease-in-out 250ms;
+    }
+    #espp:hover{
+      background-color: rgba(128, 255, 0, 0.476);
+    }
+    #sensorr:hover{
+      background-color: rgba(128, 255, 0, 0.476);
+    }
+    #m2mm:hover{
+      background-color: rgba(128, 255, 0, 0.476); 
+    }
+    #thingspeakk:hover{
+      background-color: rgba(128, 255, 0, 0.476); 
+    }
+    /* .cardd{
+      width: 40%;
+      height: 250px;
+      background: rgba(0, 0, 0, 0.473);
+      padding: 20px;
+      text-align: center;
+      margin: 5px;
+      margin-top: 0%;
+      margin-bottom:0%;
+      color: white;
+      border-radius: 8px;
+      font-family: 'Century Gothic',sans-serif;
+    } */
+    .card-img{
+      background-color: white;
+      height: 150px;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      border-radius: 8px;
+      background-size: cover;
+    }
+    .esp{
+      background-image: url("https://joy-it.net/files/files/Produkte/SBC-NodeMCU-ESP32/SBC-NodeMCU-ESP32-01.png");
+  
+    }
+    .sensor{
+      background-image: url("https://5.imimg.com/data5/CF/ON/MY-41573657/yf-g1-dn25-1inch-water-flow-sensor-500x500.jpg");
+    }
+    .onem2m{
+      background-image: url("https://smartindustry.vn/wp-content/uploads/2020/08/oneM2M-IoT-standardization.png");
+    }
+    .thingspeak{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHchnwyO7kG-A1cKmr6mN_O1jUAyrsXuDRXfAeZCSM7bjGowCvyZzI5nme8juXtlyhAA&usqp=CAU");
+    }
+    .box h1{
+      font-size: 40px;
+      letter-spacing: 4px;
+      font-weight: 100;
+    }.cardd{
+      width: 40%;
+      height: 250px;
+      background: rgba(0, 0, 0, 0.473);
+      padding: 20px;
+      text-align: center;
+      margin: 5px;
+      margin-top: 0%;
+      margin-bottom:0%;
+      color: white;
+      border-radius: 8px;
+      font-family: 'Century Gothic',sans-serif;
+    }
+    .box h5{
+      font-size: 20px;
+      letter-spacing: 3px;
+      font-weight: 100;
+    }
+    .box p{
+      text-align: justify;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    .box li{
+      display: inline-block;
+      margin: 6px;
+      list-style: none;
+    }
+    #a{
+      color: white;
+      text-decoration: none;
+      font-size: 60px;
+      transition: all ease-in-out 250ms;
+    }
+    #a:hover{
+      color: #141363;
+    }
+    table{
+      width: 100%;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    
+    main {
+      width: 80%;
+      margin: 15px auto 0;
+    }

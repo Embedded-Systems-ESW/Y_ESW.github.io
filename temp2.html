@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://kit.fontawesome.com/3734169c74.js" crossorigin="anonymous"></script>
+      <script src="charts/data.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="charts/chartf.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <link rel="stylesheet" href="./temp2.css">
+      <title>WATERFLOW MANAGEMENT</title>
+   </head>
+   <body>
+      <!-- <i class="fa-sharp fa-solid fa-up">TOP</i> -->
+      <a href="#" class="gotop" id="buttonss"><i class="fa-solid fa-arrow-up-long"></i></a>
+      <!-- <i class="fa-thin fa-up-to-line"></i> -->
+      <div class="box4">
+         <img src="./media/water-flow.jpg" alt="" class="box-img"><a style="font-size: 40px;">    WATERFLOW MANAGEMENT SYSTEM</a>
+         <br>
+         <br>
+         <a class="buttonss" href="temp.html" id="buttonss">IMPLEMENTATION APPROACH</a>
+         <a class="buttonss" href="temp2.html" id="buttonss">GRAPH ANALYSIS</a>
+         <a class="buttonss" href="temp3.html" id="buttonss">ABOUT US</a>
+       </div>
+      <div class="container">
+         <div class="container-2">
+            <section class="container-3">
+               <h1 style="text-align:center"><u>YOUR DATA</u></h1>
+               <div class="container">
+                  <br>
+                  <br>
+                  <a class="card2">
+                     <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-green green">
+                           <div class="panel-left pull-left green">
+                              <i class="fa-solid fa-water" style="font-size:40px"></i>
+                              </div>
+                           <div class="panel-right">
+                              <h3 id="Avg_daily_flow">0</h3>
+                              <h4><u>AVG DAILY FLOW RATE</u></h4>
+                              <h4 id="per_higher"></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <br>
+                  <a class="card2">
+                     <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                           <div class="panel-left pull-left blue">
+                             <i class="fa-solid fa-faucet-drip" style="font-size:40px"></i>
+								   </div>
+                           <div class="panel-right">
+							         <h3 id = "curr_flow">0</h3>
+                              <h4><u>CURRENT FLOW RATE</u></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </a>    
+                  <br>
+               </div>
+               <script src="charts/data.js"></script>
+               <br>
+               <div class="container">
+                  <br>
+                  <br>
+                  <a class="card2">
+                     <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-red">
+                           <div class="panel-left pull-left red">
+                              <i class="fa-solid fa-glass-water" style="font-size:40px"></i>
+                           </div>
+                           <div class="panel-right">
+                              <h3 id="total_volume" >0</h3>
+                              <h4><u>TOTAL VOLUME</u></h4>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <br>
+                  <a class="card2">
+                     <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-brown">
+                           <div class="panel-left pull-left brown">
+                              <i class="fa-solid fa-file-invoice-dollar" style="font-size:40px"></i>
+                           </div>
+                           <div class="panel-right">
+                              <h3 id="water_bill">0 </h3>
+                              <h4><u>BILL TILL NOW</u> </h4>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <br>
+               </div>
+               <script src="charts/data.js"></script>
+               <br>
+               <div class="container">
+                  <br>
+                  <br>
+                  <a class="card2">
+                     <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder bg-color-brown">
+                           <div class="panel-left pull-left brown">
+                              <i class="fa-solid fa-calendar-week" style="font-size:40px"></i>
+                           </div>
+                           <div class="panel-right">
+                              <h3 id="last_hour">0 </h3>
+                              <h4><u>WATER USED TODAY</u></h4>
+                              <h6 id="per_hour_vol"></h6>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <br>
+                  <a class="card20">
+                     <div id="alert_box" class="col-md-3 col-sm-12 col-xs-12">
+                        <br>
+                        <br>
+                        <i class="fa-solid fa-triangle-exclamation" style="font-size:40px"></i>
+                        <h4><u>ALERT BOX!</u></h4>
+                        <br>
+                        <br>
+                    </div>
+                  </a>
+                  <br>
+               </div>
+               <script src="charts/data.js"></script>
+            </section>
+         </div>
+         <div class="container-1">
+            <div class="box4" style="text-align:center">
+            <a class="buttonss" href="#flowrate"  id="buttonss">Flow Rate(L/Min)</a>
+            <a class="buttonss" href="#volume" href="#volume2" id="buttonss">Volume(L)</a>
+            <a class="buttonss" href="#last10hours" id="buttonss">LAST 10 HOURS (L)</a>
+            <!-- <a class="buttonss" href="#consumption" id="buttonss">LAST WEEK WATERFLOW</a> -->
+            </div>
+            <div id="slider">
+               <!-- <input type="radio" name="slider" id="slide1" checked>
+               <input type="radio" name="slider" id="slide2">
+               <input type="radio" name="slider" id="slide3">
+               <input type="radio" name="slider" id="slide4"> -->
+               <div id="slides">
+                  <div id="overflow">
+                     <div class="inner">
+                        <div class="slide slide_1" id="flowrate">
+                           <div class="slide-content">
+                              <div  class="col-md-12 col-sm-24 col-xs-12">                     
+                                 <div class="panel panel-default">
+                                 <div class="panel-heading" id="flowrate">
+                                       Flow Rate(L/min)
+                                 </div>
+                                 <canvas id="myChart1"></canvas>
+                                 </div>       
+                                 <label for="from" >FROM :</label>
+                                 <input type="date" name="from" class="one" id="input-from-date">
+                                 <label for="tp">TO :</label>
+                                 <input type="date" name="to" class="one" id="input-to-date">
+                                 <button id="input-date" class="input-date">Submit</button>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                 <script src="charts/chartf.js"></script>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- <div id="controls">
+                  <label for="slide1"><a  style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide2"><a  style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide3"><a  style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide4"><a  style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+               </div>
+               <div id="bullets">
+                  <label for="slide1"></label>
+                  <label for="slide2"></label>
+                  <label for="slide3"></label>
+                  <label for="slide4"></label>
+               </div> -->
+            </div>
+            <div id="slider2">
+               <!-- <a href="#" class="gotop" id="buttonss"><i class="fa-solid fa-arrow-up-long"></i></a> -->
+               <input type="radio" name="slider2" id="slide5" checked>
+               <input type="radio" name="slider2" id="slide6">
+               <div id="slides2">
+                  <div id="overflow2">
+                     <div class="inner">
+                        <div class="slide slide_5">
+                           <div class="slide-content">
+                              <div class="col-md-12 col-sm-24 col-xs-12">                     
+                                 <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                         Volume(L)
+                                    </div>
+                                    <canvas id="myChart2"></canvas>
+                                 </div>       
+                                 <label for="from" >FROM :</label>
+                                 <input type="date" name="from" class="one" id="input-from-date1">
+                                 <label for="tp">TO :</label>
+                                 <input type="date" name="to" class="one" id="input-to-date1">
+                                 <button id="input-date1" class="input-date1">Submit</button>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                 <script src="charts/chartf.js"></script>
+                             </div>    
+                           </div>
+                        </div>
+                        <div class="slide slide_6" id="last10hours">
+                           <div class="slide-content">
+                              <!-- <div  class="col-md-12 col-sm-24 col-xs-12">                      -->
+                                 <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                       HOUR-WISE VOLUME USED IN LAST 24 HOURS (V)
+                                    </div>
+                                    <canvas id="myChart3"></canvas>
+                                 </div> 
+                              <!-- </div> -->
+                           </div>
+                           <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                           <script src="charts/chartf.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="controls2">
+                  <label for="slide5"><a id="buttonss" style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide6"><a id="buttonss" style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide6"><a id="buttonss" style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide5"><a id="buttonss" style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <!-- <label for="slide7"><a id="buttonss" style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label>
+                  <label for="slide8"><a id="buttonss" style="color:white;font-size:30px"><i class="fa-solid fa-right-left"></i></a></label> -->
+               </div>
+               <div id="bullets2">
+                  <label for="slide5"></label>
+                  <label for="slide6"></label>
+                  <!-- <label for="slide7"></label>
+                  <label for="slide8"></label> -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
